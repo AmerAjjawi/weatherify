@@ -10,3 +10,15 @@ let btn = document.getElementById("get-forecast");
 //is to hold the values of the options
 //that you can loop through 
 //and retrieve values 
+
+
+
+//to do: 
+//figure out how to set up the select-option values
+//either queryselectorall, queryselector, id
+//figure out how to store them
+//figure out how to loop through them
+//figure out how to display them
+//figure out the conditionals
+//i.e if no city is selected, then value is not shown
+//i.e if city is selected, then display it
