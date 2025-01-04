@@ -22,3 +22,9 @@ let btn = document.getElementById("get-forecast");
 //figure out the conditionals
 //i.e if no city is selected, then value is not shown
 //i.e if city is selected, then display it
+
+
+//set up varible to grab the select option
+//going to use a selectorqueryAll to create a nodelist
+let selectedItem = document.querySelectorAll(".city");
+console.log(selectedItem);
