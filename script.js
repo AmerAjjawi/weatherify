@@ -10,21 +10,29 @@ let btn = document.getElementById("get-forecast");
 
 //set up varible to grab the select option
 //going to use a selectorqueryAll to return a nodelist
-  let selectedItem = [...document.querySelectorAll(".city")];
-    console.log(selectedItem);
+//   let selectedItem = [...document.querySelectorAll(".city")];
+//     console.log(selectedItem);
 
 
-//  let selectedItem = document.getElementById("#city");
+ let selectedItem = document.getElementById("#city");
 
-// function getOptionValue(selectedItem) {
-//     let array = [];
-//     for (let i = 0; i<selectedItem; i++) {
-//     console.log(array.push(selectedItem.options[selectedItem.selectedIndex].text));
+ function getOptionValue() {
+    let array = [];
+     for (let i = 0; i<selectedItem; i++) {
+    console.log(array.push(selectedItem = selectedItem.value));
 
-//     }
+    }
     
-// }
+ }
+getOptionValue();
 
+let options = " "
+
+for(selecteditems in selectedItem) {
+    options = options + selectedItem;
+}
+
+console.log(options)
 
 btn.addEventListener("click", getOptionValue);
 
