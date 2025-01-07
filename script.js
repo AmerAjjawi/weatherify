@@ -2,7 +2,24 @@
 //user first selects a city
 //then user clicks the button 
 //to retrieve weather information
-let btn = document.getElementById("get-forecast");
+const btn = document.getElementById("get-forecast");
+
+const cityList = document.querySelector("#city");
+
+
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(cityList.value); 
+})
+
+
+
+
+
+
+
+
+
 
 
 
@@ -14,27 +31,42 @@ let btn = document.getElementById("get-forecast");
 //     console.log(selectedItem);
 
 
- let selectedItem = document.getElementById("#city");
+//  let selectedItem = document.querySelector('select[name="city"]').value;
+//  console.log(selectedItem);
 
- function getOptionValue() {
-    let array = [];
-     for (let i = 0; i<selectedItem; i++) {
-    console.log(array.push(selectedItem = selectedItem.value));
+// let selectedItem;
 
-    }
+// function getValue() {
+// let
+//     if (selectedItem === undefined) {
+//         return `Please select a an option from the select menu`
+//     } else {
+//         return 
+//     }
+
+    //return the values of the selected items using javascript and querySelector
+//}
+
+
+//  function getOptionValue() {
+//     let array = [];
+//      for (let i = 0; i<selectedItem; i++) {
+//     return array.push(selectedItem.text);
+// //.value only works with input
+//     }
     
- }
-getOptionValue();
+//  }
+// getOptionValue();
 
-let options = " "
+// let options = " "
 
-for(selecteditems in selectedItem) {
-    options = options + selectedItem;
-}
+// for(selecteditems in selectedItem) {
+//     options = options + selectedItem;
+// }
 
-console.log(options)
+// console.log(options)
 
-btn.addEventListener("click", getOptionValue);
+// btn.addEventListener("click", getOptionValue);
 
 // let optionValue = selectedItem.options[selectedItem.selectedIndex].text;
 // console.log(optionValue);
