@@ -2,9 +2,10 @@
 //user first selects a city
 //then user clicks the button 
 //to retrieve weather information
-let btn = document.getElementById("get-forecast");
-let paragraph = document.getElementById("paragraph");
-// let cityList = document.querySelector("#city");
+let btn = document.getElementById("paragraph");
+console.log(btn);
+//Uninitialized variable for select element options
+let cityList;
 
 
 
