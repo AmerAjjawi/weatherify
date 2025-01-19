@@ -4,36 +4,30 @@
 //to retrieve weather information
 const btn = document.querySelector("#get-forecast");
 
-let cityList = document.querySelector("#city").options;
-console.log(cityList);
+
 // let option = cityList.selectedIndex;
 // console.log(option);
 
 
 
+// console.log(cityValues)
 
 
-//create an event listener for the button using "change"
+function displayValue() {
+
+}
+
+//create an event listener for the button using click
 btn.addEventListener("click", (e) => {
     e.preventDefault;
-
-
+    let cityList = document.querySelector("#city").options;
+    //return the which value is being is selected and display it.     
     let cityValues = cityList[cityList.selectedIndex].value;
-    console.log(cityValues);
-
+    if(cityValues === " ") {
+      alert(`Please select a correct option from the drop down`);
+    } else {
+        alert(`You selected: ${cityValues}`);
+    }
 })
-   
-//    let cityList = selectBox.options[selectBox.selectedIndex];
-//    console.log(cityList);
-//    let option = cityList.options[cityList.selectedIndex];
-//    console.log(option);
-
-//    let value = option.value;
-
-// let option = cityList.value;
-// console.log(option);
-
-
-    
 
 
