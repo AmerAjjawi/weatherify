@@ -3,31 +3,31 @@
 //then user clicks the button 
 //to retrieve weather information
 const btn = document.querySelector("#get-forecast");
+const card = document.getElementById("#card");
 
 
-// let option = cityList.selectedIndex;
-// console.log(option);
-
-
-
-// console.log(cityValues)
-
-
-function displayValue() {
-
-}
+//create variable to grab the card
 
 //create an event listener for the button using click
 btn.addEventListener("click", (e) => {
     e.preventDefault;
+    //create variable to retrieve the select element options
     let cityList = document.querySelector("#city").options;
-    //return the which value is being is selected and display it.     
+    //create variable to return the value from the option selection    
     let cityValues = cityList[cityList.selectedIndex].value;
-    if(cityValues === " ") {
-      alert(`Please select a correct option from the drop down`);
-    } else {
-        alert(`You selected: ${cityValues}`);
-    }
+
+    let img = document.createElement("image");
+    let title = document.createElement("h1");
+
+    //set variable id
+    img.classList.add("weather-icon");
+    title.classList.add("title");
+
+    title.textContent = cityValues
+
+    //append variables
+    // card.append(img);
+    card.append(title);
 })
 
 
