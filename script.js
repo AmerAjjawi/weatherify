@@ -3,7 +3,7 @@
 //then user clicks the button 
 //to retrieve weather information
 const btn = document.querySelector("#get-forecast");
-const card = document.getElementById("#card");
+const card = document.getElementById("card");
 
 
 //create variable to grab the card
@@ -12,11 +12,18 @@ const card = document.getElementById("#card");
 btn.addEventListener("click", (e) => {
     e.preventDefault;
     //create variable to retrieve the select element options
-    let cityList = document.querySelector("#city").options;
+    // let cityList = document.querySelector("#city").options;
+    let cityList = document.querySelector("#city");
     //create variable to return the value from the option selection    
-    let cityValues = cityList[cityList.selectedIndex].value;
+    // let cityValues = cityList[cityList.selectedIndex].value;
+    
+    let cityValues = cityList.value;
 
-    let img = document.createElement("image");
+
+    if (cityValues === " ") {
+
+    } else {
+        let img = document.createElement("image");
     let title = document.createElement("h1");
 
     //set variable id
@@ -28,6 +35,11 @@ btn.addEventListener("click", (e) => {
     //append variables
     // card.append(img);
     card.append(title);
+    }
+
+
+
+    
 })
 
 
