@@ -20,11 +20,7 @@ btn.addEventListener("click", (e) => {
     let cityValues = cityList.value;
 
 
-    if (cityValues === " ") {
-
-        alert("Please select one of the cities from the drop down");
-
-    } else {
+    if (cityValues) {
 
         //create the variables
         //display the weather icon
@@ -59,6 +55,19 @@ btn.addEventListener("click", (e) => {
         //append variables
         // card.append(img);
         card.append(location);
+
+
+
+        
+
+
+
+
+
+
+
+
+
     }
 
 
