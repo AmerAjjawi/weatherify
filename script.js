@@ -6,6 +6,13 @@ const btn = document.querySelector("#get-forecast");
 //variable for the weather card
 const card = document.getElementById("card");
 
+//variable for Api key
+const key = "50aaa7216a3648d495712656241511";
+//variable for Api base    
+const base = 
+
+
+
 
 
 //create an event listener for the button using click
@@ -58,23 +65,8 @@ btn.addEventListener("click", (e) => {
         card.append(location);
 
 
-        //create variable for API key
-        // const apiKey = "1a51656ca45fdc1bf3f87f73912458d8";
-
-        const apiKey = "50aaa7216a3648d495712656241511";
         
-        const base = 
-
-
-
-
-
-
-
-
-
-    }
-
+}
 
 
 
