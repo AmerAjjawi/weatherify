@@ -33,12 +33,15 @@ btn.addEventListener("click", (e) => {
         let title = document.createElement("h1");
         //display the temperature
         let temp = document.createElement("p");
+        //display feels-like
+        let feelsLike = document.createElement("p");
+
 
         //set variable IDs
         img.id ="weather-icon";
         title.id ="title";
         temp.id="main-temperature";
-       
+        feelsLike.id = "feels-like"
 
         //assign value to the variable
         title.textContent = cityValues
