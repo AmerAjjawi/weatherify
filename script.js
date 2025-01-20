@@ -22,6 +22,7 @@ btn.addEventListener("click", (e) => {
 
     if (cityValues) {
 
+
         //create the variables
         //display the weather icon
         let img = document.createElement("image");
@@ -57,7 +58,10 @@ btn.addEventListener("click", (e) => {
         card.append(location);
 
 
+        //create variable for API key
+        const apiKey = "1a51656ca45fdc1bf3f87f73912458d8";
 
+        
         
 
 
