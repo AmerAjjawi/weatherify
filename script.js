@@ -35,6 +35,11 @@ btn.addEventListener("click", (e) => {
         let temp = document.createElement("p");
         //display feels-like
         let feelsLike = document.createElement("p");
+        //display humidity
+        let humidity = document.createElement("p");
+        //dispaly wind
+        let wind = document.createElement("p");
+
 
 
         //set variable IDs
@@ -42,6 +47,11 @@ btn.addEventListener("click", (e) => {
         title.id ="title";
         temp.id="main-temperature";
         feelsLike.id = "feels-like"
+        humidity.id ="humidity";
+        wind.id = "wind";
+
+
+
 
         //assign value to the variable
         title.textContent = cityValues
