@@ -16,30 +16,41 @@ btn.addEventListener("click", (e) => {
     let cityList = document.querySelector("#city");
     //create variable to return the value from the option selection    
     // let cityValues = cityList[cityList.selectedIndex].value;
-    
+
     let cityValues = cityList.value;
 
 
     if (cityValues === " ") {
 
+        alert("Please select one of the cities from the drop down");
+
     } else {
+
+        //create the variables
+        //display the weather icon
         let img = document.createElement("image");
-    let title = document.createElement("h1");
+        //display the city
+        let title = document.createElement("h1");
+        //display the temperature
+        let temp = document.createElement("p");
 
-    //set variable id
-    img.classList.add("weather-icon");
-    title.classList.add("title");
+        //set variable IDs
+        img.id ="weather-icon";
+        title.id ="title";
+        temp.id="main-temperature";
+       
 
-    title.textContent = cityValues
+        //assign value to the variable
+        title.textContent = cityValues
 
-    //append variables
-    // card.append(img);
-    card.append(title);
+        //append variables
+        // card.append(img);
+        card.append(title);
     }
 
 
 
-    
+
 })
 
 
