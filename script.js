@@ -3,10 +3,10 @@
 //then user clicks the button 
 //to retrieve weather information
 const btn = document.querySelector("#get-forecast");
+//variable for the weather card
 const card = document.getElementById("card");
 
 
-//create variable to grab the card
 
 //create an event listener for the button using click
 btn.addEventListener("click", (e) => {
@@ -63,6 +63,7 @@ btn.addEventListener("click", (e) => {
 
         const apiKey = "50aaa7216a3648d495712656241511";
         
+        const base = 
 
 
 
