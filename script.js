@@ -30,7 +30,7 @@ btn.addEventListener("click", (e) => {
         //display the weather icon
         let img = document.createElement("image");
         //display the city
-        let title = document.createElement("h1");
+        let location = document.createElement("h1");
         //display the temperature
         let temp = document.createElement("p");
         //display feels-like
@@ -43,22 +43,22 @@ btn.addEventListener("click", (e) => {
 
 
         //set variable IDs
-        img.id ="weather-icon";
-        title.id ="title";
-        temp.id="main-temperature";
+        img.id = "weather-icon";
+        location.id = "location";
+        temp.id = "main-temperature";
         feelsLike.id = "feels-like"
-        humidity.id ="humidity";
+        humidity.id = "humidity";
         wind.id = "wind";
 
 
 
 
         //assign value to the variable
-        title.textContent = cityValues
+        location.textContent = cityValues
 
         //append variables
         // card.append(img);
-        card.append(title);
+        card.append(location);
     }
 
 
