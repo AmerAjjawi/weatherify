@@ -65,7 +65,7 @@ function getValues() {
 
 
 }
-getValues();
+
 
 
 //create an event listener for the button using click
