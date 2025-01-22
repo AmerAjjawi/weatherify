@@ -9,24 +9,24 @@ const cityList = document.querySelector("#city");
 
 
 
-// //variable for Api key
-const key = "50aaa7216a3648d495712656241511";
-// //variable for Api base    
-// const base = 
+// // //variable for Api key
+// const key = "50aaa7216a3648d495712656241511";
+// // //variable for Api base    
+// let base = `https://api.weatherapi.com/vi/current.json/Key=${key}&q=london`
 
 
 
 
 
 //async function to fetch a response  
-async function getData(url) {
+async function getData() {
     //try block to test the response
     try {
         //use fetch and await to get the data
         const response = await fetch(url)
         //console log response
         console.log(response)   
-
+         
         //if response is not okay or 200
         if (!response.ok) {
             //throw a new error
@@ -43,19 +43,19 @@ async function getData(url) {
 
 //call the API and call the getData() function
 async function getWeather() {
-    
+let cityValues = cityList.value;
+ const ShowWeather = await getData(`http://api.weatherapi.com/v1/current.json?Key=50aaa7216a3648d495712656241511&q=${cityValues}`, { mode: 'cors' })
+ console.log(ShowWeather);
 
+
+  getValues()
 }
-
-
-
-
-
-
+getWeather();
 
 
 
 function getValues() {
+
     //variable to return the select option values
     let cityValues = cityList.value;
     if (cityValues) {
