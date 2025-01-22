@@ -6,12 +6,6 @@ const card = document.getElementById("card");
 //variable to call the select element id
 const cityList = document.querySelector("#city");
 
-//variable to return the select option values
-// let cityValues = cityList.value;
-
-
-
-
 
 
 
@@ -19,6 +13,43 @@ const cityList = document.querySelector("#city");
 // const key = "50aaa7216a3648d495712656241511";
 // //variable for Api base    
 // const base = 
+
+
+
+
+
+//async function to fetch a response  
+async function getData(url) {
+    //try block to test the response
+    try {
+        //use fetch and await to get the data
+        const response = await fetch(url)
+        //console log response
+        console.log(response)   
+
+        //if response is not okay or 200
+        if (!response.ok) {
+            //throw a new error
+            throw new Error(`response came back with ${response.status} status`)
+        }
+        //if it works then return the data in .json
+        return response.json();
+     }
+     //catch the error
+    catch {
+        console.log(error);
+    }
+}
+
+//call the API and call the getData() function
+async function getWeather() {
+    
+
+}
+
+
+
+
 
 
 
