@@ -1,36 +1,33 @@
 //create a button variable for the button
-//user first selects a city
-//then user clicks the button 
-//to retrieve weather information
 const btn = document.querySelector("#get-forecast");
 //variable for the weather card
 const card = document.getElementById("card");
 
-//variable for Api key
-const key = "50aaa7216a3648d495712656241511";
-//variable for Api base    
-const base = 
+//variable to call the select element id
+const cityList = document.querySelector("#city");
+
+//variable to return the select option values
+// let cityValues = cityList.value;
 
 
 
 
 
-//create an event listener for the button using click
-btn.addEventListener("click", (e) => {
-    e.preventDefault;
-    //create variable to retrieve the select element options
-    // let cityList = document.querySelector("#city").options;
-    let cityList = document.querySelector("#city");
-    //create variable to return the value from the option selection    
-    // let cityValues = cityList[cityList.selectedIndex].value;
 
+
+// //variable for Api key
+// const key = "50aaa7216a3648d495712656241511";
+// //variable for Api base    
+// const base = 
+
+
+
+
+
+function getValues() {
+    //variable to return the select option values
     let cityValues = cityList.value;
-
-
     if (cityValues) {
-
-
-        //create the variables
         //display the weather icon
         let img = document.createElement("image");
         //display the city
@@ -43,8 +40,6 @@ btn.addEventListener("click", (e) => {
         let humidity = document.createElement("p");
         //dispaly wind
         let wind = document.createElement("p");
-
-
 
         //set variable IDs
         img.id = "weather-icon";
@@ -65,11 +60,14 @@ btn.addEventListener("click", (e) => {
         card.append(location);
 
 
-        
+
+    }
+
+
 }
+getValues();
 
 
-
-})
-
+//create an event listener for the button using click
+btn.addEventListener("click", getValues);
 
