@@ -17,9 +17,10 @@ const cityList = document.querySelector("#city");
 async function getData() {
     //try block to test the response
     try {
-        let cityValues = cityList.value;
+        const cityValues = cityList.value;
         console.log(cityValues);
-        const key = '50aaa7216a3648d495712656241511';
+        //api key
+        const key = "1a51656ca45fdc1bf3f87f73912458d8";
         const response = await fetch()
         //console log response
         console.log(response)
