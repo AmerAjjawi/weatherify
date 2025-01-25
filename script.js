@@ -17,11 +17,11 @@ const cityList = document.querySelector("#city");
 async function getData() {
     //try block to test the response
     try {
-        const cityValues = cityList.value;
+        let cityValues = cityList.value;
         console.log(cityValues);
         //api key
         const key = "1a51656ca45fdc1bf3f87f73912458d8";
-        const response = await fetch()
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityValues}&appid=${key}`);
         //console log response
         console.log(response)
 
