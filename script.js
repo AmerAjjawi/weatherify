@@ -1,17 +1,12 @@
 
 //Declare gloabl variables
-
-
 //create a button variable for the button
 const btn = document.querySelector("#get-forecast");
 //variable for the weather card
 const card = document.getElementById("card");
-
 //variable to call the select element id
 const cityList = document.querySelector("#city");
 
-// let cityValues = cityList.value;
-// console.log(cityValues);
 
 //async function to fetch a response  
 async function getData() {
@@ -20,8 +15,8 @@ async function getData() {
         let cityValues = cityList.value;
         console.log(cityValues);
         //api key
-        const key = "1a51656ca45fdc1bf3f87f73912458d8";
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityValues}&appid=${key}`);
+        const key = "50aaa7216a3648d495712656241511";
+        const response = await fetch(`http://api.weatherapi.com/v1/current.json?Key=${key}&q=${cityValues}`);
         //console log response
         console.log(response)
 
