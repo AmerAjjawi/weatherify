@@ -52,48 +52,45 @@ async function getData() {
 }
 
 
-// function getValues() {
+function getValues() {
 
-//     //variable to return the select option values
-//     // let cityValues = cityList.value;
-//     if (cityValues) {
-//         //display the weather icon
-//         let img = document.createElement("image");
-//         //display the city
-//         let location = document.createElement("h1");
-//         //display the temperature
-//         let temp = document.createElement("p");
-//         //display feels-like
-//         let feelsLike = document.createElement("p");
-//         //display humidity
-//         let humidity = document.createElement("p");
-//         //dispaly wind
-//         let wind = document.createElement("p");
+    //variable to return the select option values
+  
+        //display the weather icon
+        let img = document.createElement("image");
+        //display the city
+        let location = document.createElement("h1");
+        //display the temperature
+        let temp = document.createElement("p");
+        //display feels-like
+        let feelsLike = document.createElement("p");
+        //display humidity
+        let humidity = document.createElement("p");
+        //dispaly wind
+        let wind = document.createElement("p");
 
-//         //set variable IDs
-//         img.id = "weather-icon";
-//         location.id = "location";
-//         temp.id = "main-temperature";
-//         feelsLike.id = "feels-like"
-//         humidity.id = "humidity";
-//         wind.id = "wind";
-
+        //set variable IDs
+        img.id = "weather-icon";
+        location.id = "location";
+        temp.id = "main-temperature";
+        feelsLike.id = "feels-like"
+        humidity.id = "humidity";
+        wind.id = "wind";
 
 
 
-//         //assign value to the variable
-//         location.textContent = cityValues
 
-//         //append variables
-//         // card.append(img);
-//         card.append(location);
+        //assign value to the variable
+        location.textContent = cityValues
 
-
-
-//     }
+        //append variables
+        // card.append(img);
+        card.append(location);
 
 
-// }
+
+    }
+
 
 
 
