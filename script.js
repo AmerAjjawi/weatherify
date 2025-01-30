@@ -20,29 +20,36 @@ const card = document.getElementById("card");
 
 
 // //async function to fetch a response  
-// async function getData() {
-//     //try block to test the response
-//     try {
+async function getData() {
+    //try block to test the response
+    try {
         
-      
+        const cityList = document.querySelector("#city").value;
+        console.log(cityList);
+        
+        const key = "50aaa7216a3648d495712656241511";
+        
+        const url = `https://api.weatherapi.com/v1/current.json?Key=${key}&q=${cityList}`
+        console.log(url);
+        
        
-//         const response = await fetch(url);
-//         //console log response
-//         console.log(response)
+        const response = await fetch(url);
+        //console log response
+        console.log(response)
 
-//         //if response is not okay or 200
-//         if (!response.ok) {
-//             //throw a new error
-//             throw new Error(`response came back with ${response.status} status`)
-//         }
-//         //if it works then return the data in .json
-//         return response.json();
-//     }
-//     //catch the error
-//     catch {
-//         console.log(error);
-//     }
-// }
+        //if response is not okay or 200
+        if (!response.ok) {
+            //throw a new error
+            throw new Error(`response came back with ${response.status} status`)
+        }
+        //if it works then return the data in .json
+        return response.json();
+    }
+    //catch the error
+    catch (error) {
+        console.log(error);
+    }
+}
 
 
 // function getValues() {
@@ -91,20 +98,5 @@ const card = document.getElementById("card");
 
 
 //create an event listener for the button using click
-btn.addEventListener("click", () => {
-    const cityList = document.querySelector("#city").value;
-console.log(cityList);
-
-const key = "50aaa7216a3648d495712656241511";
-
-const url = `http://api.weatherapi.com/v1/current.json?Key=${key}&q=${cityList}`
-console.log(url);
-
- fetch(url)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
-    
-});
+btn.addEventListener("click", getData);
 
