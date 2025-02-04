@@ -12,6 +12,7 @@ const card = document.getElementById("card");
 
 // //async function to fetch a response  
 async function getData() {
+   
     //try block to test the response
     try {
         
@@ -35,19 +36,19 @@ async function getData() {
         }
         //if it works then return the data in .json
         const data = await response.json();
-        console.log(data);
+       return data;
     }
     //catch the error
     catch (error) {
         console.log(error);
     }
+
 }
 
 
-function getValues() {
-
-    //variable to return the select option values
-  
+async function showValues() {
+        //put call the async getData function
+        const data = await getData();
         //display the weather icon
         let img = document.createElement("image");
         //display the city
