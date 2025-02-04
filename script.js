@@ -9,15 +9,6 @@ const card = document.getElementById("card");
 
 
 
-// let cityValues = cityList.value;
-// // console.log(cityValues);
-// const key = "50aaa7216a3648d495712656241511";
-// const url = `http://api.weatherapi.com/v1/current.json?Key=${key}&q=${cityValues}`;
-// console.log(url);
-
-
-
-
 
 // //async function to fetch a response  
 async function getData() {
@@ -43,7 +34,8 @@ async function getData() {
             throw new Error(`response came back with ${response.status} status`)
         }
         //if it works then return the data in .json
-        return response.json();
+        const data = await response.json();
+        console.log(data);
     }
     //catch the error
     catch (error) {
@@ -80,12 +72,12 @@ function getValues() {
 
 
 
-        //assign value to the variable
-        location.textContent = cityValues
+        // //assign value to the variable
+        // location.textContent = cityValues
 
-        //append variables
-        // card.append(img);
-        card.append(location);
+        // //append variables
+        // // card.append(img);
+        // card.append(location);
 
 
 
