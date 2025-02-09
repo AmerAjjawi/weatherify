@@ -73,12 +73,34 @@ function showValues() {
         humidity.id = "humidity";
         wind.id = "wind";
 
-          
+          console.log(data);
+        
+        //assign the object's image depending on the weather
+        //img.textContent = data.
          
-      
+        // //assign the object's location name to the city variable
         city.textContent = data.location.name;
 
+        //assign the object's current temperature
+        temp.textContent = data.current.temp_c
+
+
+
+        //assign the object's feelsLike in Celisus to feelsLike variable
+        feelsLike.textContent = data.current.feelslike_c
+
+        //assign the object's windchill to 
+        wind.textContent = data.current.windchill_c
+
         card.append(city);
+
+        card.append(img);
+        card.append(temp);
+        card.append(feelsLike);
+        card.append(wind);
+       
+
+
     
         }
 
