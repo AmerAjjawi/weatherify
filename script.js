@@ -12,7 +12,7 @@ let data;
 
 // //async function to fetch a response  
 async function getData() {
-    
+    //variable to retrieve options from select options
     const cityList = document.querySelector("#city").value;
     //variable to pull the key
     const key = "50aaa7216a3648d495712656241511";
@@ -71,7 +71,7 @@ function showValues() {
 
 
 
-        location.textContent = data.location[0];
+        
 
         //append variable
         card.append(location);
