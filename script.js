@@ -75,14 +75,11 @@ function showValues() {
 
           
          
-        //calling showvalues
-        console.log(data);
-        //   location.textContent = data.location.name;
-        
+      
+        city.textContent = data.location.name;
 
-        // //append variables
-        // // card.append(img);
-        // card.append(location);
+        card.append(city);
+    
         }
 
 
