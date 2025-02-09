@@ -19,6 +19,9 @@ async function getData() {
     // variable for the url 
     const url = `https://api.weatherapi.com/v1/current.json?Key=${key}&q=${cityList}`
     
+
+      //calling showvalues
+      
     //try block to test the response
     try {
         
@@ -32,7 +35,8 @@ async function getData() {
         }
         //if it works then return the data in .json
         data = response.json();
-       
+        //calling the function show values
+        showValues();
      
         
     }
@@ -40,8 +44,7 @@ async function getData() {
     catch (error) {
         console.log(error);
     }
-    //calling showvalues
-    showValues();
+  
 }
 
 
@@ -69,14 +72,17 @@ function showValues() {
         humidity.id = "humidity";
         wind.id = "wind";
 
-
-
+          
+         
+        //calling showvalues
+        console.log(data);
+        //   location.textContent = data.location.name;
         
 
         //append variable
         card.append(location);
         // //assign value to the variable
-        // location.textContent = cityValues
+        
 
         // //append variables
         // // card.append(img);
