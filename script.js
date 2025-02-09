@@ -87,5 +87,3 @@ function showValues() {
 
 //create an event listener for the button using click
 btn.addEventListener("click", getData);
-
-
