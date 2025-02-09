@@ -40,7 +40,8 @@ async function getData() {
     catch (error) {
         console.log(error);
     }
-
+    //calling showvalues
+    showValues();
 }
 
 
@@ -70,7 +71,7 @@ function showValues() {
 
 
 
-        // location.textContent = weatherValues.location;
+        location.textContent = data.location[0];
 
         //append variable
         card.append(location);
