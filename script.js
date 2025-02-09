@@ -34,7 +34,8 @@ async function getData() {
             throw new Error(`response came back with ${response.status} status`)
         }
         //if it works then return the data in .json
-        data = response.json();
+        //add an await in front of the response to parse the stream data to the body
+        data = await response.json();
         //calling the function show values
         showValues();
      
@@ -54,7 +55,7 @@ function showValues() {
              //display the weather icon
         let img = document.createElement("image");
         //display the city
-        let location = document.createElement("h1");
+        let city = document.createElement("h1");
         //display the temperature
         let temp = document.createElement("p");
         //display feels-like
@@ -66,7 +67,7 @@ function showValues() {
 
         //set variable IDs
         img.id = "weather-icon";
-        location.id = "location";
+        city.id = "location";
         temp.id = "main-temperature";
         feelsLike.id = "feels-like"
         humidity.id = "humidity";
@@ -77,11 +78,6 @@ function showValues() {
         //calling showvalues
         console.log(data);
         //   location.textContent = data.location.name;
-        
-
-        //append variable
-        card.append(location);
-        // //assign value to the variable
         
 
         // //append variables
