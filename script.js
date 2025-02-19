@@ -53,7 +53,7 @@ async function getData() {
 function showValues() {
 
              //display the weather icon
-        let img = document.createElement("image");
+        let img = document.createElement("img");
         //display the city
         let city = document.createElement("h1");
         //display the temperature
@@ -75,7 +75,8 @@ function showValues() {
 
           console.log(data);
         
-        img.textContent = data.current.condition.icon
+        //displaying the image
+        img.src = data.current.condition.icon;
         
          
         // //assign the object's location name to the city variable
@@ -94,10 +95,10 @@ function showValues() {
 
 
         
-
+        document.body.append(img);
         card.append(city);
 
-        card.append(img);
+        
         card.append(temp);
         card.append(feelsLike);
         card.append(wind);
