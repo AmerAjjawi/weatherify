@@ -24,8 +24,9 @@ async function getData() {
       
     //try block to test the response
     try {
-        
+        //promise to get a fetch a response
         const response = await fetch(url);
+        //display the promise
         console.log(response);
 
         //if response is not okay or 200
@@ -33,8 +34,7 @@ async function getData() {
             //throw a new error
             throw new Error(`response came back with ${response.status} status`)
         }
-        //if it works then return the data in .json
-        //add an await in front of the response to parse the stream data to the body
+        //retrieve the data from the headers
         data = await response.json();
         //calling the function show values
         showValues();
@@ -62,16 +62,16 @@ function showValues() {
         let feelsLike = document.createElement("p");
         //display humidity
         let humidity = document.createElement("p");
-        //dispaly wind
+        //display wind
         let wind = document.createElement("p");
 
-        //set variable IDs
-        img.id = "weather-icon";
-        city.id = "location";
-        temp.id = "main-temperature";
-        feelsLike.id = "feels-like"
-        humidity.id = "humidity";
-        wind.id = "wind";
+        //set variable classes
+        img.classList.add("weather-icon");
+        city.classList.add("location");
+        temp.classList.add("main-temperature");
+        feelsLike.classList.add("feels-like");
+        humidity.classList.add("humidity");
+        wind.classList.add("wind");
 
           console.log(data);
         
