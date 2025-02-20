@@ -103,13 +103,15 @@ function showValues() {
         card.append(feelsLike);
         card.append(wind);
        
-
+       clearData()
 
     
         }
 
-
-
+//function to clear data
+ function clearData() {
+  //create logic to remove data 
+ }      
 
 //create an event listener for the button using click
 btn.addEventListener("click", getData);
