@@ -87,15 +87,15 @@ function showValues() {
         city.textContent = data.location.name;
 
         //assign the object's current temperature
-        temp.textContent = `The current Temperature is: ${data.current.temp_c} Celisus`;
+        temp.textContent = `The current Temperature is: ${data.current.temp_c}°C`;
 
 
 
         //assign the object's feelsLike in Celisus to feelsLike variable
-        feelsLike.textContent = `Currently, it feels like: ${data.current.feelslike_c} Celisus`
+        feelsLike.textContent = `Currently, it feels like: ${data.current.feelslike_c}°C`
 
         //assign the object's windchill to 
-        wind.textContent = `With the windchill, it is: ${data.current.windchill_c} Celisus`
+        wind.textContent = `With the windchill, it is: ${data.current.windchill_c}°C`
 
 
         
