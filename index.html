@@ -20,35 +20,38 @@
     <!--Main part of the body-->
     <main>
         <section class="city-information">
-              <!--button for the user to click-->
-        <button id="get-forecast">Get Forecast</button>
-             <!--button for the user to clear forecast-->
-        <button id="clear-forecast">Clear</button>
-        <!--label for aria-purposes-->
-        <label for="city">
-            <!--Drop down of top 5 most populated cities in Canada-->
-            <select name="select-form" id="city">
-                <option value=" ">(Please select one of the following)</option>
-                <option value="toronto">Toronto</option>
-                <option value="montreal" >Montreal</option>
-                <option value="vancouver" >Vancouver</option>
-                <option value="calgary" >Calgary</option>
-                <option value="edmonton" >Edmonton</option>
-                <option value="ottawa" >Ottawa</option>
-            </select>
-        </label>
+            <!--button for the user to click-->
+            <button id="get-forecast">Get Forecast</button>
+            <!--button for the user to clear forecast-->
+            <button id="clear-forecast">Clear</button>
+            <!--label for aria-purposes-->
+            <label for="city">
+                <!--Drop down of top 5 most populated cities in Canada-->
+                <select name="select-form" id="city">
+                    <option value=" ">(Please select one of the following)</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="montreal">Montreal</option>
+                    <option value="vancouver">Vancouver</option>
+                    <option value="calgary">Calgary</option>
+                    <option value="edmonton">Edmonton</option>
+                    <option value="ottawa">Ottawa</option>
+                </select>
+            </label>
         </section>
-        <section>
+        <section class="weather-wave">
+          <div class='box'>
+                <div class='wave -one'></div>
+                <div class='wave -two'></div>
+                <div class='wave -three'></div>
+                <div class="weathercon"><i class='fas fa-sun' style='color: #d36326;'></i></div>
+        </section>
+        <section class="weather-card">
             <div id="card">
-    
+
             </div>
         </section>
-        <section class="fake-city">
-            <h1 class="fake-location">MORNINGSIDE</h1>
-            <p>Friday | June 17 | 2025</p>
-            <h2 cllass="fake-temp">25°C</h2>
-        </section>
-      
+
+
 
     </main>
     <!--link js script-->

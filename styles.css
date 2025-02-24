@@ -9,4 +9,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
 }
+
+.weather-card {
+    width: 20vw;
+    height: 60vh;
+    border-radius: 5px;
+    position: sticky;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    min-width: 200px;
+    min-height: 350px;
+   
+  }
+
+ 
