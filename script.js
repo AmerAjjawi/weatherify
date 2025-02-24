@@ -2,6 +2,8 @@
 //Declare gloabl variables
 //create a button variable for the button
 const btn = document.querySelector("#get-forecast");
+//create a button variable to clear data
+const clear = document.querySelector("#clear-forecast");
 //variable for the weather card
 const card = document.getElementById("card");
 //variable for response object
@@ -103,7 +105,7 @@ function showValues() {
         card.append(feelsLike);
         card.append(wind);
        
-       clearData()
+   
 
     
         }
@@ -111,7 +113,9 @@ function showValues() {
 //function to clear data
  function clearData() {
   //create logic to remove data 
+  card.innerHTML = " ";
  }      
 
 //create an event listener for the button using click
 btn.addEventListener("click", getData);
+clear.addEventListener("click", clearData);
