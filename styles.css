@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Trirong", serif;
+}
+
+body {
+    background: #F3f2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
