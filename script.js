@@ -8,6 +8,8 @@ const clear = document.querySelector("#clear-forecast");
 const card = document.getElementById("card");
 //variable for response object
 let data;
+//variable for img
+let img;
 
 
 
@@ -85,19 +87,19 @@ function showValues() {
         city.textContent = data.location.name;
 
         //assign the object's current temperature
-        temp.textContent = `The current Temperature is: ${data.current.temp_c}`;
+        temp.textContent = `The current Temperature is: ${data.current.temp_c} Celisus`;
 
 
 
         //assign the object's feelsLike in Celisus to feelsLike variable
-        feelsLike.textContent = `Currently, it feels like: ${data.current.feelslike_c}`
+        feelsLike.textContent = `Currently, it feels like: ${data.current.feelslike_c} Celisus`
 
         //assign the object's windchill to 
-        wind.textContent = `With the windchill, it is: ${data.current.windchill_c}`
+        wind.textContent = `With the windchill, it is: ${data.current.windchill_c} Celisus`
 
 
         
-        document.body.append(img);
+       card.append(img);
         card.append(city);
 
         
@@ -106,14 +108,15 @@ function showValues() {
         card.append(wind);
        
    
-
+       
     
         }
 
 //function to clear data
  function clearData() {
   //create logic to remove data 
-  card.innerHTML = " ";
+  card.textContent = " ";
+  // document.querySelector(".weather-icon").
  }      
 
 //create an event listener for the button using click
