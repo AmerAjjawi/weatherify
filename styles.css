@@ -14,23 +14,33 @@ body {
     width: 100vw;
 }
 
-.weather-card {
+.city-information {
     width: 20vw;
     height: 60vh;
-    border-radius: 5px;
-    position: sticky;
-    overflow: hidden;
-    transform: translate3d(0, 0, 0);
-    min-width: 200px;
-    min-height: 350px;
-   
-  }
+    border-radius: 50px;
+}
 
+input
 /* #card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-  */
+}*/
+
+.wave {
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background: white;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1;
+  }
