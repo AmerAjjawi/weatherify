@@ -24,16 +24,14 @@
             <p>Feels like 14°C</p>
         </header> -->
         <section class="outer-container">
-            <div class="inner-container"><!---Add waves-->
-                <div class="wave1"></div>
-                <div class="wave2"></div>
-                <div class="wave3"></div>
-                <!--add font awesome-->
-                <div><i class="fa fa-sun-o" aria-hidden="true"></i></div>
-
+            <div class="inner-container">
+               
                 <!--button for the user to click-->
                 <button id="get-forecast">Get Forecast</button>
-
+                <br>
+                <div class="c-name">SunnyVille</div>
+                <div class="date"></div>
+                <div class="c-temp"></div>
                 <!--label for aria-purposes-->
                 <label for="city">
                     <!--Drop down of top 5 most populated cities in Canada-->
@@ -47,7 +45,9 @@
                         <option value="ottawa">Ottawa</option>
                     </select>
                 </label>
-                <div id="card"></div>
+                <!--display card from input -->
+                <div id="card"></div> 
+            
                 <!--button for the user to clear forecast-->
                 <button id="clear-forecast">Clear</button>
             </div>
