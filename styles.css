@@ -41,6 +41,17 @@ section {
     gap: 10px;
     
 }
+
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 0.2rem;
+    font-family: 'Roboto', 'sans-serif';
+} 
 /* body {
     background: #F3f2ef;
     display: flex;
