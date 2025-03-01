@@ -12,6 +12,10 @@ body {
         background-color: rgba(20, 150, 159, 0.5);
 }
 
+section {
+    margin-top: 10%;
+}
+
 .inner-container {
     
     width: 100%;
@@ -21,6 +25,7 @@ body {
     flex-direction: center;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -33,6 +38,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     
 }
 /* body {
