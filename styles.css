@@ -56,6 +56,16 @@ section {
     
     font-family: 'Roboto', 'sans-serif';
 } 
+
+
+#c-name {
+    font-family: 'Roboto', sans-serifS;
+}
+
+#clear-forecast {
+    width: 30%;
+    text-align: center;
+}
 /* body {
     background: #F3f2ef;
     display: flex;
