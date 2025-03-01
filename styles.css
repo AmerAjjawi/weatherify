@@ -59,10 +59,16 @@ section {
 
 
 #c-name {
-    font-family: 'Roboto', sans-serifS;
+    font-family: 'Roboto', 'sans-serifS';
+    font-weight: 700px;
 }
 
 #clear-forecast {
+    width: 30%;
+    text-align: center;
+}
+
+get-forecast {
     width: 30%;
     text-align: center;
 }
